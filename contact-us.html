@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Website Informasi Kecamatan Wiyung</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="contact-us.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<body>
+<!-- Tombol Kembali ke Atas -->
+<button id="backToTop" title="Kembali ke Atas">
+	<i class="fa fa-arrow-up"></i>
+</button>
+  
+<!-- -----------Header------ -->
+<section id="header">
+<nav class="navbar navbar-expand-lg navbar-light">
+	<div class="logo">SIWIYUNG</div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  	<i class="fa fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">HOME</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section>
+<!-- Akhir Header -->
+
+<img src="./asset/contact-us.png" alt="Contact Us Image" class="foto">
+
+
+<!-- -------------Contact Us----------- -->
+<section id="contact" style="background: url('https://via.placeholder.com/1500x800') no-repeat center center fixed; background-size: cover;">
+	<div class="container">
+		<div class="contact-form wow tada">
+			<h1>Contact Us</h1>
+			<p>We’d love to hear from you! Drop us a message below.</p>
+			<form action="#" method="post">
+				<div class="form-row">
+					<div class="col-md-6">
+						<input type="text" class="form-control" placeholder="Your Name" required>
+					</div>
+					<div class="col-md-6">
+						<input type="email" class="form-control" placeholder="Your Email" required>
+					</div>
+				</div>
+				<div class="form-row mt-3">
+					<div class="col-md-12">
+						<textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+					</div>
+				</div>
+				<div class="form-row mt-3">
+					<div class="col-md-12">
+						<button type="submit" class="btn btn-primary">Send Message</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+
+<!-- -------------Footer----------- -->
+<section id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="footer-logo">SIWIYUNG</div>
+				<p>Kecamatan Wiyung adalah kawasan strategis yang terus berkembang di Surabaya Barat.</p>
+			</div>
+			<div class="col-md-3">
+				<h1>Fasilitas</h1>
+				<p>Pusat Perbelanjaan</p>
+				<p>Taman Kota</p>
+				<p>Kuliner Khas</p>
+				<p>Transportasi Mudah</p>
+			</div>
+			<div class="col-md-3">
+				<h1>Kontak</h1>
+				<p><i class="fa fa-phone-square"></i> +62 123456789</p>
+				<p><i class="fa fa-envelope"></i> wiyunginfo@gmail.com</p>
+				<p><i class="fa fa-home"></i> Wiyung, Surabaya</p>
+				<p> Jawa Timur, Indonesia</p>
+			</div>
+			<div class="col-md-3">
+				<h1>Ikuti Kami</h1>
+				<p><i class="fa fa-facebook-official"></i> Facebook</p>
+				<p><i class="fa fa-youtube-play"></i> Youtube</p>
+				<p><i class="fa fa-linkedin"></i> Linkedin</p>
+				<p><i class="fa fa-twitter"></i> Twitter</p>
+			</div>
+		</div> <hr>
+		
+	</div>
+</section>
+
+<!-- Smooth Scroll JS -->
+<script src="smooth-scroll.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
+<!-- Animation -->
+<script src="wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+
+<script>
+	window.onscroll = function() {
+	  const backToTopButton = document.getElementById('backToTop');
+	  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+		backToTopButton.style.display = 'block';
+	  } else {
+		backToTopButton.style.display = 'none';
+	  }
+	};
+  
+	// Fungsi untuk scroll ke atas
+	document.getElementById('backToTop').onclick = function() {
+	  window.scrollTo({ top: 0, behavior: 'smooth' });
+	};
+  </script>
+  
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
